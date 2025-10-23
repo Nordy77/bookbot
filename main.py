@@ -7,7 +7,7 @@ def num_words(words):
     total = 0
     for word in words.split():
         total += 1
-    print(total)
+    return total
 def get_book_text(path):
     with open(path) as f:
         return f.read()
