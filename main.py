@@ -4,9 +4,10 @@ def main():
     print(f"Found {num_words(text)} total words")
 
 def num_words(words):
-    for word in words:
-        return len(words)
-
+    total = 0
+    for word in words.split():
+        total += 1
+    print(total)
 def get_book_text(path):
     with open(path) as f:
         return f.read()
