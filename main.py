@@ -1,13 +1,10 @@
 def main():
+    from stats import get_num_words
     book_path = "books/frankenstein.txt"
     text = get_book_text(book_path)
-    print(f"Found {num_words(text)} total words")
+    num = get_num_words(text)
+    print(f"Found {num} total words")
 
-def num_words(words):
-    total = 0
-    for word in words.split():
-        total += 1
-    return total
 def get_book_text(path):
     with open(path) as f:
         return f.read()
