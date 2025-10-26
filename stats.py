@@ -16,3 +16,11 @@ def count_chars(chars):
         else:
             char_dict[char] = 1 
     return char_dict
+
+def sort_dicts(char_dict):
+    list_dicts = []
+    for key in char_dict:
+        list_dicts.append({})
+        for i in list_dicts:
+            i["char"] = key
+    return list_dicts
