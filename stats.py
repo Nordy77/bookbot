@@ -17,10 +17,8 @@ def count_chars(chars):
             char_dict[char] = 1 
     return char_dict
 
-def sort_dicts(char_dict):
-    list_dicts = []
-    for key in char_dict:
-        list_dicts.append({})
-        for i in list_dicts:
-            i["char"] = key
-    return list_dicts
+def sort_chars(char_dict):
+    char_list = []
+    for char in char_dict:
+        char_list.append({char})
+    return char_list
